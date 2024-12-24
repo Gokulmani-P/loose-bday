@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ROSHINI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="part1" class="part">
+        <h1 class="animated-text">Happy Birthday, ROSHINI! 🎉✨</h1>
+        <button class="animated-button" onclick="showPart2()">Start the Celebration</button>
+    </div>
+    
+    <div id="part2" class="part hidden">
+        <h2 class="animated-text">What's your favorite birthday surprise?</h2>
+        <button class="animated-button" onclick="showPart3()">Find Out!</button>
+    </div>
+
+    <div id="part3" class="part hidden">
+        <h2 class="animated-text">Are you ready for magic? 🎈</h2>
+        <button class="animated-button" onclick="showPart4()">Of course!</button>
+    </div>
+
+    <div id="part4" class="part hidden">
+        <h2 class="animated-text">Do you love surprises? 🎁</h2>
+        <button class="animated-button" onclick="showPart5()">Yes, I do!</button>
+    </div>
+
+    <div id="part5" class="part hidden">
+        <h2 class="animated-text">Let’s keep going! 🎊</h2>
+        <button class="animated-button" onclick="showLoading()">Let’s Go!</button>
+    </div>
+
+    <div id="loading" class="part hidden">
+        <h2 class="animated-text">Loading the magic...</h2>
+        <div class="loader"></div>
+    </div>
+
+    <div id="videoContainer" class="part hidden">
+        <video id="birthdayVideo" class="video" controls>
+            <source src="loose-bday.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="finalMessage" class="part hidden">
+        <h2 class="animated-text">Happy Birthday, ROSHINI! 💖</h2>
+        <button class="animated-button" onclick="showHearts()">Send Love 💕</button>
+        <div id="hearts" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
